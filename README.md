@@ -50,13 +50,15 @@ You will find them at `<nodeIP>:<nodePort>`
 
 ## Scale up the Deployment
 
-When using the `deployment-files` version you can now scale up and down your number of ReplicaSets
+When using the `deployment-files` version you can now scale up and down your number of ReplicaSets for critical pods like the voting frontend.
 
 ``` shell
 kubectl scale deployment voting-app-deploy --replicas=3
 ```
 
-Adjust the number of `replicas` as you like to see the ease of scalability when using deployments instead of just pods.
+Notice at the bottom of the page how the `Processed by container ID` changes constantly as you refresh or change votes repeatedly, as it is now hitting random available Pods
+
+![Architecture Overview](/images/architecture.excalidraw.png)
 
 ## Environment tear down
 
