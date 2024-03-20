@@ -22,22 +22,24 @@ Stage five - `result-pod` `result-service`
 
 Deployment
 
-``` shell
-kubectl create -f <app/service_name>
-```
+You can deploy all of the manifest files with a single command if you are in the directory with all of the `yaml` files.
 
-You can also deploy all of the manifest files with a single command if you have all of the `yaml` files in a single directory.
-
-From within the directory run
+From within either the `pod-files` or the `deployment-files` directory run
 
 ``` shell
 kubectl create -f .
 ```
 
-Check status of Pod and Service
+Check status of `pod-files` version
 
 ``` shell
 kubectl get pods,service
+```
+
+Check status of the `deployment-files` version
+
+```shell
+kubectl get pods,service,deployment,rs
 ```
 
 ## View the end result
@@ -54,18 +56,4 @@ Because we labeled all pods and services with `demo-voting-app` we can easily te
 kubectl delete all --selector=app=demo-voting-app
 ```
 
-It should return the following
-
-``` shell
-pod "voting-app-pod" deleted
-pod "redis-pod" deleted
-pod "postgres-pod" deleted
-pod "worker-app-pod" deleted
-pod "result-app-pod" deleted
-service "voting-service" deleted
-service "redis" deleted
-service "db" deleted
-service "result-service" deleted
-```
-
-Checking the Pods and Services should return no trace of the `voting-app`
+Checking the Pods, Services, Deployments and ReplicaSets should return no trace of the `voting-app`
