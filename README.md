@@ -58,7 +58,7 @@ kubectl scale deployment voting-app-deploy --replicas=3
 
 Notice at the bottom of the page how the `Processed by container ID` changes constantly as you refresh or change votes repeatedly, as it is now hitting random available Pods
 
-![Architecture Overview](/images/architecture.excalidraw.png)
+![Example](/images/id.example.png)
 
 ## Environment tear down
 
