@@ -37,3 +37,27 @@ kubectl get pods,service
 Navigate to the frontend pages to view the `voting` and `result` paqes
 
 You will find them at `<nodeIP>:<nodePort>`
+
+## Environment tear down
+
+Because we labeled all pods and services with `demo-voting-app` we can easily teardown the environment with a single command.
+
+``` shell
+kubectl delete all --selector=app=demo-voting-app
+```
+
+It should return the following
+
+``` shell
+pod "voting-app-pod" deleted
+pod "redis-pod" deleted
+pod "postgres-pod" deleted
+pod "worker-app-pod" deleted
+pod "result-app-pod" deleted
+service "voting-service" deleted
+service "redis" deleted
+service "db" deleted
+service "result-service" deleted
+```
+
+Checking the Pods and Services should return no trace of the `voting-app`
