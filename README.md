@@ -4,19 +4,19 @@ This is a basic voting application to show how microservices work. You will be a
 
 ![Architecture Overview](architecture.excalidraw.png)
 
-## Deploy all of the pods and services
+## Deploy the microservice via the pods and services
 
 Deploy the pods in the following order with their respective service.
 
-`voting-pod` `voting-service`
+Stage one - `voting-pod` `voting-service`
 
-`redis-pod` `redis-service`
+Stage two - `redis-pod` `redis-service`
 
-`postgres-pod` `postgres-service`
+Stage three - `postgres-pod` `postgres-service`
 
-`worker-app`
+Stage four - `worker-app`
 
-`result-pod` `result-service`
+Stage five - `result-pod` `result-service`
 
 ## Commands to deploy and check status
 
