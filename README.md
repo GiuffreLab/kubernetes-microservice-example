@@ -1,6 +1,6 @@
 # How to deploy the microservice demo
 
-This is a basic voting application to show how microservices work. You will be able to see the difference between creating and managing the application as Pods, and as a Deployment. This is meant to show the ease in scalability with Deployments versus when you create Pods.
+This is a basic voting application to show how kubernetes microservices work. You will be able to see the difference between creating and managing the application as Pods, and as a Deployment. This is meant to show the ease in scalability with Deployments versus when you create Pods.
 
 ![Architecture Overview](/images/architecture.excalidraw.png)
 
