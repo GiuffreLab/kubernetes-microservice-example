@@ -2,6 +2,8 @@
 
 This is a basic voting application to show how microservices work
 
+![Architecture Overview](architecture.excalidraw.png)
+
 ## Deploy all of the pods and services
 
 Deploy the pods in the following order with their respective service.
