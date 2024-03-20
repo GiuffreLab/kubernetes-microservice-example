@@ -1,6 +1,6 @@
 # How to deploy the microservice demo
 
-This is a basic voting application to show how microservices work
+This is a basic voting application to show how microservices work. You will be able to see the difference between creating and managing the application as Pods, and as a Deployment. This is meant to show the ease in management and scalability with Deployments.
 
 ![Architecture Overview](architecture.excalidraw.png)
 
@@ -8,15 +8,15 @@ This is a basic voting application to show how microservices work
 
 Deploy the pods in the following order with their respective service.
 
-`voting-pod`
+`voting-pod` `voting-service`
 
-`redis-pod`
+`redis-pod` `redis-service`
 
-`postgres-pod`
+`postgres-pod` `postgres-service`
 
 `worker-app`
 
-`result-pod`
+`result-pod` `result-service`
 
 ## Commands to deploy and check status
 
