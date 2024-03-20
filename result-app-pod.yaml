@@ -8,6 +8,6 @@ metadata:
 spec:
   containers:
   - name: result-app
-    image: kodekloud/examplevotingapp_result:v1
+    image: dockersamples/examplevotingapp_result
     ports:
     - containerPort: 80
