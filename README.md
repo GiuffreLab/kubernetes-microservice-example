@@ -5,7 +5,9 @@ This is a basic voting application to show how kubernetes microservices work. Yo
 ![Architecture Overview](/images/architecture.excalidraw.png)
 
 ## Deployment Warning
-Please note, this is just a basic default example container of a voting app. It should not be left exposed to the internet because it has basic default passwords for the Postgres DB for it to function within the manifest files (a huge no-no). Be smart with the deployment testing.
+Please note, this is just a basic default example container of a voting app. It should not be left exposed to the internet because it has clear text username/passwords for the Postgres DB for it to function within the manifest files (a huge no-no). This is so it will work with the Python app that makes up the `voting-app` Pods. 
+
+Be smart with the deployment testing.
 
 ## Commands to deploy and check status
 
