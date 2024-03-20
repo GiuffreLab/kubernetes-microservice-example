@@ -26,6 +26,14 @@ Deployment
 kubectl create -f <app/service_name>
 ```
 
+You can also deploy all of the manifest files with a single command if you have all of the `yaml` files in a single directory.
+
+From within the directory run
+
+``` shell
+kubectl create -f .
+```
+
 Check status of Pod and Service
 
 ``` shell
