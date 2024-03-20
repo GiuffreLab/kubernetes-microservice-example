@@ -2,7 +2,7 @@
 
 This is a basic voting application to show how microservices work. You will be able to see the difference between creating and managing the application as Pods, and as a Deployment. This is meant to show the ease in management and scalability with Deployments.
 
-![Architecture Overview](architecture.excalidraw.png)
+![Architecture Overview](/images/architecture.excalidraw.png)
 
 ## Deploy the microservice via the pods and services
 
