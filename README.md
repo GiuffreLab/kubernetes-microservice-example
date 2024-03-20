@@ -48,6 +48,16 @@ Navigate to the frontend pages to view the `voting` and `result` paqes
 
 You will find them at `<nodeIP>:<nodePort>`
 
+## Scale up the Deployment
+
+When using the `deployment-files` version you can now scale up and down your number of ReplicaSets
+
+``` shell
+kubectl scale deployment voting-app-deploy --replicas=3
+```
+
+Adjust the number of `replicas` as you like to see the ease of scalability when using deployments instead of just pods.
+
 ## Environment tear down
 
 Because we labeled all pods and services with `demo-voting-app` we can easily teardown the environment with a single command.
