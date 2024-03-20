@@ -6,7 +6,7 @@ This is a basic voting application to show how microservices work. You will be a
 
 ## Deploy the microservice via the pods and services
 
-Deploy the pods in the `pods-files` folder in the following order with their respective service.
+Deploy the pods in the `pod-files` folder in the following order with their respective service.
 
 Stage one - `voting-pod` `voting-service`
 
